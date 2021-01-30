@@ -5,4 +5,29 @@ Also this readme is used for placing comments/annotations taken while reading th
 ---
 ### Annotations
 
+#### Ruby.new
+- yield
+- printf: prints its arguments under the control of a format string
+    printf("Number: %5.2f,\nString: %s\n", 1.23, 'hello')
+
+- ARGV: array that contains the arguments passed to the running program
+
+#### Classes, Objects and Variables
+
+- Attributes:
+  - methods that let you access and manipulate the state of an object from the outside.
+  - The internal state of an object is held in instance variables. The external
+  state is exposed through methods we're calling attributes.
+
+- Uniform Access Principle: hiding the diference between instance variables and
+  calculated values.
+    e.g: Create virtual instance varialbe using attribute methods
+
+- Access Control
+  - Public methods
+  - Protected methods
+  - Private methods
+
+
 ### Todays topics 
+- Atrributes methods to access variables or any instance variable?
