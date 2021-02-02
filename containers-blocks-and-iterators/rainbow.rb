@@ -12,4 +12,6 @@ class Rainbow
 end
 
 r = Rainbow.new
-r.each { |color| puts "Next color: #{color}" }
+y_color = r.find { |color| color.start_with?('y') }
+puts "First color starting with 'y' is #{y_color}.'"
+# r.each { |color| puts "Next color: #{color}" }
