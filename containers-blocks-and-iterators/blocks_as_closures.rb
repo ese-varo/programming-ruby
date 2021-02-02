@@ -55,3 +55,23 @@ my_while -> { a < 3 } do
   puts a
   a += 1
 end
+
+# block parameters using old notation
+
+proc4 = lambda do |a, *b, &block|
+  puts "a = #{a.inspect}"
+  puts "b = #{b.inspect}"
+  block.call
+end
+
+proc4.call(1, 2, 3, 4) { puts "in block1" }
+
+# block parameters using new notation
+
+proc5 = -> a, *b, &block do
+  puts "a = #{a.inspect}"
+  puts "b = #{b.inspect}"
+  block.call
+end
+
+proc5.call(1, 2, 3, 4) { puts "in block2" }
