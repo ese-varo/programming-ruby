@@ -38,6 +38,11 @@ Also this readme is used for placing comments/annotations taken while reading th
        sum   += square
      end`
   - block_given? - Inside a method you can detect whether your caller has passed in a block
+
+#### Inheritance, modules and mixins
+- `super`: Ruby sends a message to the parent of the current object, asking it to invoke 
+  a method of the same name as the method invoking super. It passes this method the parameters
+  that were passed to super.
        
 
 
