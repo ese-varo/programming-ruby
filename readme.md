@@ -28,6 +28,17 @@ Also this readme is used for placing comments/annotations taken while reading th
   - Protected methods
   - Private methods
 
+#### Containers, Blocks and Iterators
+- Iterator: a method that invokes a block of code repeatedly.
+- Blocks:
+  - To define block-local variables they should be written after a semicolon in
+    the block's parameter list: 
+    `[1,2,3,4].each do |value; square|
+       square = value * value # this is a different variable
+       sum   += square
+     end`
+       
 
-### Todays topics 
+
+#### Todays topics 
 - Atrributes methods to access variables or any instance variable?
