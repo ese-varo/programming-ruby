@@ -37,6 +37,7 @@ Also this readme is used for placing comments/annotations taken while reading th
        square = value * value # this is a different variable
        sum   += square
      end`
+  - block_given? - Inside a method you can detect whether your caller has passed in a block
        
 
 
