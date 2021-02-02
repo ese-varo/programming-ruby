@@ -43,7 +43,15 @@ Also this readme is used for placing comments/annotations taken while reading th
 - `super`: Ruby sends a message to the parent of the current object, asking it to invoke 
   a method of the same name as the method invoking super. It passes this method the parameters
   that were passed to super.
-       
+
+- modules: 
+  - provide a namespace and prevent name clashes
+  - support the mixin facility
+  - methods can be defined preceding its name with the module's name and a period
+    `def MyModule.method` or preceding its name with the `self` keyword `def self.method`
+  - module methods can be called by preceding its name with the module's name and
+    a period `MyModule.method`
+  - module constants are referenced using the module name and two colons `MyModule::CON`
 
 
 #### Todays topics 
