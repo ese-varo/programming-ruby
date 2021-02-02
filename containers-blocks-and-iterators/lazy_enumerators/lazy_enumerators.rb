@@ -10,13 +10,15 @@ def palindrome?(n)
   n == n.reverse
 end
 
-multiple_of_three = Integer
-        .all
-        .select { |i| (i % 3).zero? }
+multiple_of_three = -> n { (n % 3).zero? }
+palindrome        = -> n { n = n.to_s; n == n.reverse }
 
-p multiple_of_three.first(10)
+p Integer
+    .all
+    .select(&multiple_of_three)
+    .select(&palindrome)
+    .first(10)
 
-m3_palindrome = multiple_of_three
-        .select { |i| palindrome?(i) }
+# p multiple_of_three.first(10)
 
-p m3_palindrome.first(10)
+# p m3_palindrome.first(10)
