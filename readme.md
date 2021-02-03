@@ -63,6 +63,9 @@ Also this readme is used for placing comments/annotations taken while reading th
   - In general, a mixin that requires its own state is not a mixin--it should be
     written as a class.
 
+When we create our own classes, you can think of it as adding new types to the language.
+And when we subclass either a built-in class or our own class, we're creating a subtype.
+
 
 
 
