@@ -53,6 +53,13 @@ Also this readme is used for placing comments/annotations taken while reading th
     a period `MyModule.method`
   - module constants are referenced using the module name and two colons `MyModule::CON`
 
+- mixins: are modules mixed-in classes and its instance methods hapen to be part
+  of the class in which it is mixed in, and so they behave as instance mathods
+  of the class also.
+  - `include`: it makes a reference to a module, if the module is in an external
+    file that file should be loaded (using `require/load`) in order to be able 
+    to mixed in the module.
+
 
 #### Todays topics 
 - Atrributes methods to access variables or any instance variable?
