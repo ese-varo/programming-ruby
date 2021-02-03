@@ -59,6 +59,11 @@ Also this readme is used for placing comments/annotations taken while reading th
   - `include`: it makes a reference to a module, if the module is in an external
     file that file should be loaded (using `require/load`) in order to be able 
     to mixed in the module.
+  - instance variables in mixins pass to be instance variables of the client class.
+  - In general, a mixin that requires its own state is not a mixin--it should be
+    written as a class.
+
+
 
 
 #### Todays topics 
